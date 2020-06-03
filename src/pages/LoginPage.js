@@ -1,9 +1,10 @@
 import React from "react";
+import Input from "../components/common/Input"
 
 const LoginPage = () => {
     return (
         <>
-            로그인
+            <Input/>
         </>
     );
 };
