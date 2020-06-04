@@ -5,7 +5,7 @@ import {darken, lighten} from 'polished';
 
 const Button = ({children, color, shape, ...rest}) => {
     return (
-        <StyledButton color={color} shape={shape} {...rest}>{children}</StyledButton>
+        <StyledButton color={color} shape={shape}>{children}</StyledButton>
     );
 };
 
