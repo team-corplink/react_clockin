@@ -1,10 +1,15 @@
 import React from "react";
+import Template from "../components/common/Template";
+import Gnb from "../components/common/Gnb";
 
 const TodoPage = () => {
     return (
-        <>
-            기록
-        </>
+        <Template>
+            <Gnb
+                activeMenu="todo"
+            />
+            <div>기록</div>
+        </Template>
     );
 };
 

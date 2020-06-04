@@ -1,6 +1,5 @@
 import React from "react";
 import styled, {css} from "styled-components";
-import {darken, lighten} from 'polished';
 
 const Input = ({type, size, placeholder}) => {
     return (
