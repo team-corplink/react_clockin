@@ -4,7 +4,8 @@ import Input from "../components/common/Input"
 const LoginPage = () => {
     return (
         <>
-            <Input/>
+            <Input placeholder = "phone"/>
+            <Input type="password" placeholder="password"/>
         </>
     );
 };
