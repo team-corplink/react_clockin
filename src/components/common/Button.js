@@ -20,29 +20,34 @@ const colorStyles = css`
  ${({theme, color}) => {
         const selectColor = theme.palette[color];
         return css`
-            background : ${color};
+            background : ${selectColor};
             &:hover{
-                background : ${ lighten(0.1, selectColor )};
+                background : ${ lighten(0.05, selectColor )};
             }
             &:active {
-                background: ${ darken(0.1, selectColor )};
+                background: ${ darken(0.05, selectColor )};
             }
         `
     }}
 `
 
+/*모양*/
 const shapes = {
     circle : {
         borderRadius : '50px',
         padding : '0 20px',
         height : '30px',
-        fontSize : '28px'
+        fontSize : '13px',
+        width :'auto',
+        fontWeight :'normal'
     },
     square : {
         borderRadius : '10px',
         padding : '0px',
         height : '60px',
-        fontSize : '13px'
+        fontSize : '28px',
+        width :'100%',
+        fontWeight :'bold',
     }
 }
 
@@ -53,6 +58,8 @@ const shapeStyles = css`
         padding : ${shapes[shape].padding};
         height : ${shapes[shape].height};
         font-size : ${shapes[shape].fontSize};
+        width : ${shapes[shape].width};
+        font-weight : ${shapes[shape].fontWeight};
    `}
  
 `
@@ -63,13 +70,9 @@ const StyledButton = styled.button`
     outline : none;
     border : none;
     color : #fff;
-    font-weight : bold;
     cursor: pointer;
-    ${props=>{
-        if(props.align){
-            return css `justify-content: ${props.align};`;
-        }
-}}
+    justify-content :center;
+    align-items : center;
 
     /*색상*/
     ${colorStyles}
