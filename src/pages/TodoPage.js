@@ -2,10 +2,8 @@ import React from "react";
 import Template from "../components/common/Template";
 import Gnb from "../components/common/Gnb";
 import Category from "../components/common/Category";
-import {ThemeProvider} from "styled-components";
-import palette from "../lib/styles/palette";
 
-const TodoPage = () => {
+const TodoPage = ({match}) => {
 
     const category = [
         {
@@ -27,16 +25,18 @@ const TodoPage = () => {
     ]
 
     return (
-        <ThemeProvider theme={{palette}}>
-            <Template>
-                <Gnb
-                    activeMenu="todo"
+        <Template>
+            <Gnb
+                activeMenu="todo"
+            />
+            <div>
+                <Category
+                    type="todo"
+                    category={category}
+                    active={match.params.type}
                 />
-                <div>
-                    <Category type="todo" category={category}></Category>
-                </div>
-            </Template>
-        </ThemeProvider>
+            </div>
+        </Template>
     );
 };
 

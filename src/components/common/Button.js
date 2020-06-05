@@ -3,9 +3,10 @@ import styled, {css} from 'styled-components';
 import {darken, lighten} from 'polished';
 
 
-const Button = ({children, color, shape, ...rest}) => {
+const Button = ({children, color, shape, onclick, ...rest}) => {
+
     return (
-        <StyledButton color={color} shape={shape}>{children}</StyledButton>
+        <StyledButton color={color} shape={shape} onClick={onclick}>{children}</StyledButton>
     );
 };
 
@@ -84,5 +85,9 @@ const StyledButton = styled.button`
     & + & {
         margin-left : 1rem
     }
+    
+    // &:active {
+    //     transform: scale(0.98);
+    // }
 
 `;

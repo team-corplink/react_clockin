@@ -1,14 +1,35 @@
 import React from "react";
 import Template from "../components/common/Template";
 import Gnb from "../components/common/Gnb";
+import Category from "../components/common/Category";
+const StatsPage = ({match}) => {
 
-const StatsPage = () => {
+    const category = [
+        {
+            id: 1,
+            type: 'today',
+            name: '오늘'
+        },
+        {
+            id: 2,
+            type: 'weekly',
+            name: '주간'
+        },
+
+    ]
+
     return (
         <Template>
             <Gnb
                 activeMenu="stats"
             />
-            <div>통계</div>
+            <div>
+                <Category
+                    type="stats"
+                    category={category}
+                    active={match.params.type}
+                />
+            </div>
         </Template>
     );
 };

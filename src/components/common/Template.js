@@ -1,11 +1,14 @@
 import React from "react";
-import styled, {css} from "styled-components";
+import styled, {css, ThemeProvider} from "styled-components";
+import palette from "../../lib/styles/palette";
 
 const Template = ({type, children}) => {
     return (
-        <StyledTemplate type={type}>
-            {children}
-        </StyledTemplate>
+        <ThemeProvider theme={{palette}}>
+            <StyledTemplate type={type}>
+                {children}
+            </StyledTemplate>
+        </ThemeProvider>
     );
 };
 

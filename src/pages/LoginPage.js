@@ -1,4 +1,4 @@
-import React, {memo} from "react";
+import React from "react";
 import Input from "../components/common/Input"
 import Template from "../components/common/Template";
 
