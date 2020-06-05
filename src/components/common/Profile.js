@@ -22,7 +22,8 @@ const StyledImage = styled.div`
         margin-right: 12.5px;
         ${({imagePath}) => {
         return css`
-                background: url('${imagePath}') no-repeat center 0;
+                background-image: url('${imagePath}');
+                background-position: center 0;
                 `;
 }}
 `;

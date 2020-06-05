@@ -9,9 +9,10 @@ import StatsPage from "./pages/StatsPage";
 function App() {
     return (
         <>
-            <Route component={LoginPage} path={['/','/login']} exact/>
+            <Route component={LoginPage} path={['/', '/login']} exact/>
             <Route component={JoinPage} path={'/join'} exact/>
             <Route component={TodoPage} path={'/todo'} exact/>
+            <Route component={TodoPage} path={'/todo/:part([0-9]+)'} exact/>
             <Route component={StatsPage} path={'/stats'} exact/>
         </>
     );

@@ -18,15 +18,23 @@ export default Template;
 const sizes = {
     main: {
         width: '250px',
+        padding: '24px',
     },
     member: {
         width: '50%',
+        padding: '0px',
     }
 }
 
 const sizeStyles = css`
     ${({type}) => css`
         width: ${sizes[type].width};
+        `}
+`;
+
+const paddingStyles = css`
+    ${({type}) => css`
+        padding: ${sizes[type].padding};
         `}
 `;
 
@@ -48,5 +56,6 @@ const StyledTemplate = styled.div`
     
     >*:last-child{
         flex: 1;
+        ${paddingStyles}
     }
 `;
