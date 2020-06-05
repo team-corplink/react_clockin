@@ -12,8 +12,8 @@ const JoinPage = () => {
                 <Template type="member">
                     <div>dd</div>
                     <div>
-                        <Button shape="square">radius</Button>
-                        <Button shape="circle">Button</Button>
+                        <Button shape="square" color="blue">JOIN</Button>
+                        <Button shape="circle">업무</Button>
                     </div>
                 </Template>
             </ThemeProvider>
