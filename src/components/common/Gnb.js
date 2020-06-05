@@ -52,8 +52,9 @@ const StyledGnb = styled.div`
 
 const Logo = styled(NavLink)`
     background: url("/common/logo.svg") no-repeat 50% 50%;
+    background-size: contain;
     display: block;
-    width: 75px;
+    width: 70px;
     height: 25px;
 `;
 

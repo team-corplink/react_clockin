@@ -1,6 +1,7 @@
 # IDEA
 .idea
 .idea/*
+yarn.lock
 
 # Logs
 logs
