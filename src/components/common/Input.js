@@ -1,13 +1,16 @@
 import React from "react";
 import styled, {css} from "styled-components";
 
-const Input = ({type, size, placeholder}) => {
+const Input = ({type, size, placeholder, onChange, name, value}) => {
     return (
         <>
             <StyledInput
                 type={type}
                 size={size}
                 placeholder={placeholder}
+                onChange={onChange}
+                name={name}
+                value={value}
             />
         </>
     );
@@ -39,8 +42,8 @@ const sizeStyles = css`
 `;
 
 const StyledInput = styled.input`
-    width: 80%;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 20px;
     background-color: #242525;
     border: 0;
     border-radius: 5px;

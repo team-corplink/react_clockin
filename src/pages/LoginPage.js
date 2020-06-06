@@ -1,14 +1,13 @@
 import React from "react";
-import Input from "../components/common/Input"
 import Template from "../components/common/Template";
+import LoginForm from "../containers/auth/LoginForm";
 
 const LoginPage = () => {
     return (
         <Template type="member">
             <div>dd</div>
             <div>
-                <Input placeholder = "phone"/>
-                <Input type="password" placeholder="password"/>
+                <LoginForm/>
             </div>
         </Template>
     );

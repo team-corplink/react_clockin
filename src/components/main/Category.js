@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import Button from "../common/Button";
 import {BsPlus} from "react-icons/bs";
 import {useHistory} from 'react-router-dom';
