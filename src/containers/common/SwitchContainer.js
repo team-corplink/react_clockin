@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Switch from '../components/common/Switch';
+import Switch from '../../components/common/Switch';
 
 
 const SwitchContainer = ({color, size, onActive}) => {
