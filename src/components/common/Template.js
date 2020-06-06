@@ -49,6 +49,7 @@ const StyledTemplate = styled.div`
     align-items: flex-start;
     
     >* {
+        position: relative;
         height:100%;
     }
     

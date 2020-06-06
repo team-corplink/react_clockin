@@ -1,17 +1,16 @@
 import React from "react";
-import Button from "../components/common/Button";
 import Template from "../components/common/Template";
+import RegisterForm from "../containers/auth/RegisterForm";
 
-const JoinPage = () => {
+const RegisterPage = () => {
     return (
         <Template type="member">
             <div>dd</div>
             <div>
-                <Button shape="square" color="blue">JOIN</Button>
-                <Button shape="circle">업무</Button>
+                <RegisterForm/>
             </div>
         </Template>
     );
 };
 
-export default JoinPage;
+export default RegisterPage;
