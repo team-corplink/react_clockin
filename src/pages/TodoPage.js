@@ -1,7 +1,7 @@
 import React from "react";
 import Template from "../components/common/Template";
-import Gnb from "../components/common/Gnb";
-import Category from "../components/common/Category";
+import Gnb from "../components/main/Gnb";
+import Category from "../components/main/Category";
 
 const TodoPage = ({match}) => {
 
