@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../components/common/Button";
 import Template from "../components/common/Template";
-import SwitchContainer from "../containers/SwitchContainer";
+import SwitchContainer from "../containers/common/SwitchContainer";
 
 const JoinPage = () => {
     return (
