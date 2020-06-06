@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../components/common/Button";
 import Template from "../components/common/Template";
+import SwitchContainer from "../containers/SwitchContainer";
 
 const JoinPage = () => {
     return (
@@ -9,6 +10,7 @@ const JoinPage = () => {
             <div>
                 <Button shape="square" color="blue">JOIN</Button>
                 <Button shape="circle">업무</Button>
+                <SwitchContainer onActive=""></SwitchContainer>
             </div>
         </Template>
     );
