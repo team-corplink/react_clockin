@@ -120,8 +120,9 @@ const EachSlide = styled.div`
    }
    .slide-content{
        text-align :center;
-       font-size: 1.3rem;
+       font-size: 1.2rem;
        color : ${palette.font_default};
        width : 100%;
+       font-weight : 300;
    }
 `;
