@@ -26,26 +26,26 @@ const loginImages = [
     },
   ];
    
-  const joinImages = [
+  const registerImages = [
     {
         'key': 1,
         'image': 'images/login_1.png',
-        'desc': 'join1',
+        'desc': '회원가입 내용 1 입력하기',
     },
     {
         'key': 2,
         'image': 'images/login_2.png',
-        'desc': 'join2',
+        'desc': '회원가입 내용 2 입력하기',
     },
     {
         'key': 3,
         'image': 'images/login_3.png',
-        'desc': 'join3',
+        'desc': '회원가입 내용 3 입력하기',
     },
     {
         'key': 4,
         'image': 'images/login_4.png',
-        'desc': 'join4',
+        'desc': '회원가입 내용 4 입력하기',
     },
   ];
 
@@ -74,7 +74,7 @@ const SlideItem = ({image, desc}) => {
 
 const Slides = ({type}) => {
 /* 슬라이드 이미지 타입을 정의 */
-    const slideItems = {type}==='join'?joinImages:loginImages;
+    const slideItems = {type}.type==='register'?registerImages:loginImages;
 
     return (
         <SlideContainer className="slide-container">
@@ -122,5 +122,6 @@ const EachSlide = styled.div`
        text-align :center;
        font-size: 1.3rem;
        color : ${palette.font_default};
+       width : 100%;
    }
 `;
