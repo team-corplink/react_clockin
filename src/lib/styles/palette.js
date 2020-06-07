@@ -9,7 +9,8 @@ const palette = {
     green: '#67CE67',
     purple: '#BB86FC',
     gray: '#494949',
-
+    gray_dark : '#939393',
+    font_default : '#D9D9D9',
 };
 
 export default palette;
