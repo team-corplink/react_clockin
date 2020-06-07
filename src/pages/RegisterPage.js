@@ -12,9 +12,6 @@ const RegisterPage = () => {
                 <Slides type="login"></Slides>
             </SlidesBox>
             <div>
-                <SwitchContainer onActive=""></SwitchContainer>
-            </div>
-            <div>
                 <RegisterForm/>
             </div>
         </Template>

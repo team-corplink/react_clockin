@@ -93,16 +93,16 @@ export default Slides;
 const SlideContainer = styled.div`
    overflow : hidden;
    .react-slideshow-container + div.indicators > .each-slideshow-indicator{
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     margin: 0 10px 10px;
     background : ${palette.gray_dark};
     transition : all .05s ease-in-out;
 }
 .react-slideshow-container + div.indicators > .each-slideshow-indicator.active{
     background : ${palette.blue};
-    width : 24px;
-    border-radius : 6px;
+    width : 30px;
+    border-radius : 8px;
    }
 `;
 
@@ -120,7 +120,7 @@ const EachSlide = styled.div`
    }
    .slide-content{
        text-align :center;
-       font-size: 16px;
+       font-size: 1.3rem;
        color : ${palette.font_default};
    }
 `;
