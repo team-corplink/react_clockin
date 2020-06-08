@@ -2,6 +2,7 @@ import React from "react";
 import Template from "../components/common/Template";
 import Gnb from "../components/main/Gnb";
 import Category from "../components/main/Category";
+import TodoTemplate from "../components/todo/TodoTemplate";
 
 const TodoPage = ({match}) => {
 
@@ -35,6 +36,7 @@ const TodoPage = ({match}) => {
                     category={category}
                     active={match.params.type}
                 />
+                <TodoTemplate/>
             </div>
         </Template>
     );
