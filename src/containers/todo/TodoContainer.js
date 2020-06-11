@@ -1,6 +1,7 @@
 import React from "react";
 import TodoTemplate from "../../components/todo/TodoTemplate";
 import Category from "../../components/main/Category";
+import TodoForm from "../../components/todo/TodoForm";
 
 const TodoContainer = ({active}) => {
 
@@ -54,14 +55,15 @@ const TodoContainer = ({active}) => {
 
     return (
         <>
-            <Category
-                type="todo"
-                category={category}
-                active={active}
-            />
-            <TodoTemplate todoList={todoList}>
-
-            </TodoTemplate>
+            <div>
+                <Category
+                    type="todo"
+                    category={category}
+                    active={active}
+                />
+                <TodoTemplate todoList={todoList}/>
+            </div>
+            <TodoForm/>
         </>
     );
 };

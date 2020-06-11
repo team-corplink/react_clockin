@@ -43,6 +43,7 @@ const StyledTemplate = styled.div`
     >* {
         position: relative;
         height:100%;
+        overflow: hidden;
     }
     
     >*:first-child{

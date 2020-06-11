@@ -1,7 +1,7 @@
 import React from "react";
 import Template from "../components/common/Template";
-import Gnb from "../components/main/Gnb";
 import TodoContainer from "../containers/todo/TodoContainer";
+import Gnb from "../components/main/Gnb";
 
 const TodoPage = ({match}) => {
 
@@ -10,7 +10,9 @@ const TodoPage = ({match}) => {
             <Gnb
                 activeMenu="todo"
             />
-            <TodoContainer active={match.params.type}/>
+            <div>
+                <TodoContainer active={match.params.type}/>
+            </div>
         </Template>
     );
 };
